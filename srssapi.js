@@ -47,31 +47,31 @@ document.getElementById("mor").addEventListener("change", fetchSunriseSunset);
 document.getElementById("sunriseSunset").addEventListener("change", fetchSunriseSunset);
 
 function convertTimeToPercentage(timeString) {
-    // Parse the input time string
-    const timeRegex = /^(\d{1,2}):(\d{2}) (AM|PM)$/;
-    const match = timeString.match(timeRegex);
-  
-    if (!match) {
-      return "Invalid time format. Please use 'hh:mm AM/PM' format.";
-    }
-  
-    let [, hours, minutes, period] = match;
-  
-    // Convert hours to 24-hour format
-    hours = parseInt(hours, 10);
-    if (period === "PM" && hours !== 12) {
-      hours += 12;
-    } else if (period === "AM" && hours === 12) {
-      hours = 0;
-    }
-  
-    // Calculate the time in minutes
-    const totalMinutes = hours * 60 + parseInt(minutes, 10);
-  
-    // Calculate the percentage between 6 AM and 11 PM
-    const startMinutes = 6 * 60;
-    const endMinutes = 23 * 60;
-    const percentage = ((totalMinutes - startMinutes) / (endMinutes - startMinutes)) * 100;
-  
-    return percentage.toFixed(2) + "%";
+  // Parse the input time string
+  const timeRegex = /^(\d{1,2}):(\d{2}) (AM|PM)$/;
+  const match = timeString.match(timeRegex);
+
+  if (!match) {
+    return "Invalid time format. Please use 'hh:mm AM/PM' format.";
   }
+
+  let [, hours, minutes, period] = match;
+
+  // Convert hours to 24-hour format
+  hours = parseInt(hours, 10);
+  if (period === "PM" && hours !== 12) {
+    hours += 12;
+  } else if (period === "AM" && hours === 12) {
+    hours = 0;
+  }
+
+  // Calculate the time in minutes
+  const totalMinutes = hours * 60 + parseInt(minutes, 10);
+
+  // Calculate the percentage between 6 AM and 11 PM
+  const startMinutes = 6 * 60;
+  const endMinutes = 23 * 60;
+  const percentage = Math.min(Math.max(((totalMinutes - startMinutes) / (endMinutes - startMinutes)) * 100, 0), 100);
+
+  return percentage.toFixed(2) + "%";
+}

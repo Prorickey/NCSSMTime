@@ -115,7 +115,7 @@ function convertTimeToPercentage(timeString) {
     // Calculate the percentage between 6 AM and 11 PM
     const startMinutes = 6 * 60;
     const endMinutes = 23 * 60;
-    const percentage = ((totalMinutes - startMinutes) / (endMinutes - startMinutes)) * 100;
+    const percentage = Math.min(Math.max(((totalMinutes - startMinutes) / (endMinutes - startMinutes)) * 100, 0), 100);
   
     return percentage.toFixed(2) + "%";
   }
