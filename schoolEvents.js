@@ -17,7 +17,7 @@ function updateSchoolHours() {
         {
             breakfastText.parentElement.children[0].innerText = "Breakfast";
             lunchText.parentElement.children[0].innerText = "Lunch";
-            breakfastText.innerHTML = "7:00 AM<br>9:30 AM";
+            breakfastText.innerHTML = "7:30 AM<br>9:30 AM";
             lunchText.innerHTML = "11:00 AM<br>1:00 PM";
             dinnerText.innerHTML = "5:00 PM<br>7:00 PM";
 
