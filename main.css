@@ -32,6 +32,15 @@ body.morganton
   background-position: center;
   }
 
+.settings-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+  z-index: 10;
+}
+
 div.campus-switch, div.time-format {
   display: flex;
   gap: 16px;
@@ -41,11 +50,6 @@ div.campus-switch, div.time-format {
 div.campus-switch p, div.time-format p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-}
-
-div.time-format {
-  position: absolute;
-  top: 15vh;
 }
 
 /* The switch - the box around the slider */
@@ -128,6 +132,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  top: 6%;
 }
 
 .main-times {
@@ -184,11 +190,26 @@ main {
 .button-index p { /* Button font setup */
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 22px;
   margin: 0;
   display: block;
-  color: var(--light);
   cursor: pointer;
+}
+
+.button-index p a {
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.25s;
+  color: var(--light);
+}
+
+.button-index p a:hover {
+  opacity: 1;
+}
+
+.button-index p a:active, .button-index p a:focus, .button-index p a:visited {
+  color: var(--light);
+  opacity: 1;
 }
 
 .about-page, .schedule-page { /* Subpage fancy background image */
