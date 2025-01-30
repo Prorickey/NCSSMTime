@@ -2,7 +2,7 @@ let pageTitle = "";
 let scheduleMap = new Map();
 
 let mod = true;
-let showTimeline = true;
+let showTimeline = false;
 
 let specialSubTimer = false;
 
@@ -242,7 +242,7 @@ function updateSchedule() {
         document.getElementById("txt2").innerHTML = `${timeString2}<br><span class="sub-text">Left before Check</span>`;
     }
     else { // turn off the text
-        document.getElementById("txt2").innerHTML = `<span class="sub-text">J-Term Session 1: 1/8 - 1/17<br>J-Term Session 2: 1/21 - 1/30</span>`;
+        document.getElementById("txt2").innerHTML = `<span class="sub-text"></span>`;
     }
 
     document.getElementById("txt").innerHTML = `${timeString}<br><span class="sub-text">Left ${nextEvent.name}</span>`; // countdown text that replaces "Loading..."
@@ -274,8 +274,8 @@ function getNextEvent(dateTime) { // finds the next event
 
     let events;
     if (mod) { // override
-        events = scheduleMap.get(day); // THIS HAS BEEN CHANGED FOR J-TERM!!!
-        document.getElementById("banner").innerText = day + ` (January Term)`;
+        events = scheduleMap.get("Modified");
+        document.getElementById("banner").innerText = `Have a great Extended Weekend!`;
     }
     else {
         events = scheduleMap.get(day);
@@ -289,116 +289,23 @@ function dayOfWeek(number) {
     return daysOfWeek[number];
 }
 
+
 function updateTimeMap(currentTime) { // the actual code
     let year = currentTime.getFullYear();
     let month = currentTime.getMonth();
     let day = currentTime.getDate();
     scheduleMap.set("Modified", [{
-        date: new Date(2025, 0, 7, 22, 0),
-        name: "before Check"
-    }
-    ]);
-    scheduleMap.set("Monday", [{
-            date: new Date(year, month, day, 22, 0),
+            date: new Date(2025, 1, 2, 22, 0),
             name: "before Check"
         },
         {
-            date: new Date(year, month, day, 22, 5),
+            date: new Date(year, 1, 2, 22, 5),
             name: "of Check"
         },
         {
-            date: new Date(year, month, day + 1, 22, 0),
-            name: "before Check"
+            date: new Date(year, 1, 3, 8, 30),
+            name: "before A1"
         }
-    ]);
-    scheduleMap.set("Tuesday", [{
-            date: new Date(year, month, day, 22, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, month, day, 22, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, month, day + 1, 22, 0),
-            name: "before Check"
-        }
-    ]);
-    scheduleMap.set("Wednesday", [{
-            date: new Date(year, month, day, 22, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, month, day, 22, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, month, day + 1, 22, 0),
-            name: "before Check"
-        }
-    ]);
-    scheduleMap.set("Thursday", [{
-            date: new Date(year, month, day, 22, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, month, day, 22, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, month, day + 1, 23, 0),
-            name: "before Check"
-        }
-    ]);
-    scheduleMap.set("Friday", [{
-            date: new Date(year, month, day, 23, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, month, day, 23, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, month, day + 1, 23, 0),
-            name: "before Check"
-        }
-    ]);
-    scheduleMap.set("Saturday", [{
-            date: new Date(year, month, day, 23, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, month, day, 23, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, month, day + 1, 22, 0),
-            name: "before Check"
-        }
-    ]);
-    scheduleMap.set("Sunday", [{
-            date: new Date(year, month, day, 22, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, month, day, 22, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, month, day + 1, 22, 0),
-            name: "before Check"
-        }
-    ]);
-}
-// ONE MORE THING HAS BEEN CHANGED: NEAR LINE 277
-/*function updateTimeMap(currentTime) { // the actual code
-    let year = currentTime.getFullYear();
-    let month = currentTime.getMonth();
-    let day = currentTime.getDate();
-    scheduleMap.set("Modified", [{
-        date: new Date(2025, 0, 7, 22, 0),
-        name: "before Check"
-    }
     ]);
     scheduleMap.set("Monday", [{
             date: new Date(year, month, day, 8, 30),
@@ -799,7 +706,7 @@ function updateTimeMap(currentTime) { // the actual code
             name: "before A1"
         }
     ]);
-}*/
+}
 
 function formatTime(dateTime) { // technical formatting stuff
     let hours = (dateTime.getHours()) % 12;
