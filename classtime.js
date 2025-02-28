@@ -1,8 +1,8 @@
 let pageTitle = "";
 let scheduleMap = new Map();
 
-let mod = false;
-let showTimeline = true;
+let mod = true;
+let showTimeline = false;
 
 let specialSubTimer = false;
 
@@ -295,16 +295,16 @@ function updateTimeMap(currentTime) { // the actual code
     let month = currentTime.getMonth();
     let day = currentTime.getDate();
     scheduleMap.set("Modified", [{
-            date: new Date(2025, 1, 2, 22, 0),
+            date: new Date(2025, 2, 2, 22, 0),
             name: "before Check"
         },
         {
-            date: new Date(year, 1, 2, 22, 5),
+            date: new Date(year, 2, 2, 22, 5),
             name: "of Check"
         },
         {
-            date: new Date(year, 1, 3, 8, 30),
-            name: "before A1"
+            date: new Date(year, 2, 3, 8, 30),
+            name: "before A5"
         }
     ]);
     scheduleMap.set("Monday", [{
@@ -362,7 +362,7 @@ function updateTimeMap(currentTime) { // the actual code
         {
             date: new Date(year, month, day, 15, 35),
             name: "of G1"
-        },
+        },/*
         {
             date: new Date(year, month, day, 15, 40),
             name: "of Transition (G1 to Meeting)"
@@ -370,7 +370,7 @@ function updateTimeMap(currentTime) { // the actual code
         {
             date: new Date(year, month, day, 17, 0),
             name: "of Meeting"
-        },
+        },*/
         {
             date: new Date(year, month, day, 18, 15),
             name: "before H1"
