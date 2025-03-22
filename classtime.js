@@ -1,8 +1,8 @@
 let pageTitle = "";
 let scheduleMap = new Map();
 
-let mod = false;
-let showTimeline = true;
+let mod = true;
+let showTimeline = false;
 
 let specialSubTimer = false;
 
@@ -275,7 +275,7 @@ function getNextEvent(dateTime) { // finds the next event
     let events;
     if (mod) { // override
         events = scheduleMap.get("Modified");
-        document.getElementById("banner").innerText = day + ` (Senior Photo)`;
+        document.getElementById("banner").innerText = `Have a great Extended Weekend!`;
     }
     else {
         events = scheduleMap.get(day);
@@ -295,103 +295,15 @@ function updateTimeMap(currentTime) { // the actual code
     let month = currentTime.getMonth();
     let day = currentTime.getDate();
     scheduleMap.set("Modified", [{
-            date: new Date(2025, 2, 9, 22, 0),
+            date: new Date(2025, 2, 24, 22, 0),
             name: "before Check"
         },
         {
-            date: new Date(2025, 2, 9, 22, 5),
+            date: new Date(2025, 2, 24, 22, 5),
             name: "of Check"
         },
         {
-            date: new Date(year, 2, 10, 8, 30),
-            name: "before A1"
-        },
-        {
-            date: new Date(year, 2, 10, 9, 20),
-            name: "of A1"
-        },
-        {
-            date: new Date(year, 2, 10, 9, 25),
-            name: "of Transition (A1 to B1)"
-        },
-        {
-            date: new Date(year, 2, 10, 10, 15),
-            name: "of B1"
-        },
-        {
-            date: new Date(year, 2, 10, 10, 20),
-            name: "of Transition (B1 to C1)"
-        },
-        {
-            date: new Date(year, 2, 10, 11, 10),
-            name: "of C1"
-        },
-        {
-            date: new Date(year, 2, 10, 11, 15),
-            name: "of Transition (C1 to D1)"
-        },
-        {
-            date: new Date(year, 2, 10, 12, 5),
-            name: "of D1"
-        },
-        {
-            date: new Date(year, 2, 10, 12, 55),
-            name: "of Lunch"
-        },
-        {
-            date: new Date(year, 2, 10, 13, 45),
-            name: "of Sr. Photo/Mtg."
-        },
-        {
-            date: new Date(year, 2, 10, 13, 50),
-            name: "before E1"
-        },
-        {
-            date: new Date(year, 2, 10, 14, 40),
-            name: "of E1"
-        },
-        {
-            date: new Date(year, 2, 10, 14, 45),
-            name: "of Transition (E1 to F1)"
-        },
-        {
-            date: new Date(year, 2, 10, 15, 35),
-            name: "of F1"
-        },
-        {
-            date: new Date(year, 2, 10, 15, 40),
-            name: "of Transition (F1 to G1)"
-        },
-        {
-            date: new Date(year, 2, 10, 16, 30),
-            name: "of G1"
-        },
-        {
-            date: new Date(year, 2, 10, 18, 15),
-            name: "before H1"
-        },
-        {
-            date: new Date(year, 2, 10, 19, 55),
-            name: "of H1"
-        },
-        {
-            date: new Date(year, 2, 10, 20, 5),
-            name: "of Transition (H1 to I1)"
-        },
-        {
-            date: new Date(year, 2, 10, 21, 45),
-            name: "of I1"
-        },
-        {
-            date: new Date(year, 2, 10, 22, 0),
-            name: "before Check"
-        },
-        {
-            date: new Date(year, 2, 10, 22, 5),
-            name: "of Check"
-        },
-        {
-            date: new Date(year, 2, 11, 8, 30),
+            date: new Date(year, 2, 25, 8, 30),
             name: "before D2"
         }
     ]);
