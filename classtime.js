@@ -2,7 +2,7 @@ let pageTitle = "";
 let scheduleMap = new Map();
 
 let mod = true;
-let showTimeline = false;
+let showTimeline = true;
 
 let specialSubTimer = false;
 
