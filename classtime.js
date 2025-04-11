@@ -1,8 +1,8 @@
 let pageTitle = "";
 let scheduleMap = new Map();
 
-let mod = false;
-let showTimeline = true;
+let mod = true;
+let showTimeline = false;
 
 let specialSubTimer = false;
 
@@ -275,7 +275,7 @@ function getNextEvent(dateTime) { // finds the next event
     let events;
     if (mod) { // override
         events = scheduleMap.get("Modified");
-        document.getElementById("banner").innerText = `Have a great Extended Weekend!`;
+        document.getElementById("banner").innerText = `Have a great Spring Break!`;
     }
     else {
         events = scheduleMap.get(day);
@@ -295,15 +295,15 @@ function updateTimeMap(currentTime) { // the actual code
     let month = currentTime.getMonth();
     let day = currentTime.getDate();
     scheduleMap.set("Modified", [{
-            date: new Date(2025, 2, 24, 22, 0),
+            date: new Date(2025, 3, 21, 22, 0),
             name: "before Check"
         },
         {
-            date: new Date(2025, 2, 24, 22, 5),
+            date: new Date(2025, 3, 21, 22, 5),
             name: "of Check"
         },
         {
-            date: new Date(year, 2, 25, 8, 30),
+            date: new Date(2025, 3, 22, 8, 30),
             name: "before D2"
         }
     ]);
