@@ -1,7 +1,7 @@
 let pageTitle = "";
 let scheduleMap = new Map();
 
-let mod = false;
+let mod = true;
 let showTimeline = true;
 
 let specialSubTimer = false;
@@ -275,7 +275,7 @@ function getNextEvent(dateTime) { // finds the next event
     let events;
     if (mod) { // override
         events = scheduleMap.get("Modified");
-        document.getElementById("banner").innerText = `Have a great Spring Break!`;
+        document.getElementById("banner").innerText = day + ` (Research Symposium)`;
     }
     else {
         events = scheduleMap.get(day);
@@ -295,15 +295,103 @@ function updateTimeMap(currentTime) { // the actual code
     let month = currentTime.getMonth();
     let day = currentTime.getDate();
     scheduleMap.set("Modified", [{
-            date: new Date(2025, 3, 21, 22, 0),
+            date: new Date(year, 3, 27, 22, 0),
             name: "before Check"
         },
         {
-            date: new Date(2025, 3, 21, 22, 5),
+            date: new Date(year, 3, 27, 22, 5),
             name: "of Check"
         },
         {
-            date: new Date(2025, 3, 22, 8, 30),
+            date: new Date(year, 3, 28, 8, 30),
+            name: "before A1"
+        },
+        {
+            date: new Date(year, 3, 28, 9, 0),
+            name: "of A1"
+        },
+        {
+            date: new Date(year, 3, 28, 9, 5),
+            name: "of Transition (A1 to B1)"
+        },
+        {
+            date: new Date(year, 3, 28, 9, 35),
+            name: "of B1"
+        },
+        {
+            date: new Date(year, 3, 28, 9, 40),
+            name: "of Transition (B1 to C1)"
+        },
+        {
+            date: new Date(year, 3, 28, 10, 10),
+            name: "of C1"
+        },
+        {
+            date: new Date(year, 3, 28, 10, 15),
+            name: "of Transition (C1 to D1)"
+        },
+        {
+            date: new Date(year, 3, 28, 10, 45),
+            name: "of D1"
+        },
+        {
+            date: new Date(year, 3, 28, 10, 50),
+            name: "of Transition (D1 to E1)"
+        },
+        {
+            date: new Date(year, 3, 28, 11, 20),
+            name: "of E1"
+        },
+        {
+            date: new Date(year, 3, 28, 11, 25),
+            name: "of Transition (E1 to F1)"
+        },
+        {
+            date: new Date(year, 3, 28, 11, 55),
+            name: "of F1"
+        },
+        {
+            date: new Date(year, 3, 28, 12, 0),
+            name: "of Transition (F1 to G1)"
+        },
+        {
+            date: new Date(year, 3, 28, 12, 30),
+            name: "of G1"
+        },
+        {
+            date: new Date(year, 3, 28, 13, 20),
+            name: "of Lunch"
+        },
+        {
+            date: new Date(year, 3, 28, 17, 0),
+            name: "of Research Symposium"
+        },
+        {
+            date: new Date(year, 3, 28, 18, 15),
+            name: "before H1"
+        },
+        {
+            date: new Date(year, 3, 28, 19, 55),
+            name: "of H1"
+        },
+        {
+            date: new Date(year, 3, 28, 20, 5),
+            name: "of Transition (H1 to I1)"
+        },
+        {
+            date: new Date(year, 3, 28, 21, 45),
+            name: "of I1"
+        },
+        {
+            date: new Date(year, 3, 28, 22, 0),
+            name: "before Check"
+        },
+        {
+            date: new Date(year, 3, 28, 22, 5),
+            name: "of Check"
+        },
+        {
+            date: new Date(year, 3, 29, 8, 30),
             name: "before D2"
         }
     ]);
