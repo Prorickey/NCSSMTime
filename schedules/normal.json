@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "scheduleType": "normal",
+    "weekOf": null,
+    "lastUpdated": "2025-08-12",
+    "showTimeline": true,
+    "regBlock": 50,
+    "labBlock": 90,
+    "specialSubTimer": false
+  },
+  "Monday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "08:30",
+        "event": "before A1"
+      },
+      {
+        "time": "09:20",
+        "event": "of A1"
+      },
+      {
+        "time": "09:25",
+        "event": "of Transition (A1 to B1)"
+      },
+      {
+        "time": "10:15",
+        "event": "of B1"
+      },
+      {
+        "time": "10:20",
+        "event": "of Transition (B1 to C1)"
+      },
+      {
+        "time": "11:10",
+        "event": "of C1"
+      },
+      {
+        "time": "11:15",
+        "event": "of Transition (C1 to D1)"
+      },
+      {
+        "time": "12:05",
+        "event": "of D1"
+      },
+      {
+        "time": "12:55",
+        "event": "of Lunch"
+      },
+      {
+        "time": "13:45",
+        "event": "of E1"
+      },
+      {
+        "time": "13:50",
+        "event": "of Transition (E1 to F1)"
+      },
+      {
+        "time": "14:40",
+        "event": "of F1"
+      },
+      {
+        "time": "14:45",
+        "event": "of Transition (F1 to G1)"
+      },
+      {
+        "time": "15:35",
+        "event": "of G1"
+      },
+      {
+        "time": "18:15",
+        "event": "before H1"
+      },
+      {
+        "time": "19:55",
+        "event": "of H1"
+      },
+      {
+        "time": "20:05",
+        "event": "of Transition (H1 to I1)"
+      },
+      {
+        "time": "21:45",
+        "event": "of I1"
+      },
+      {
+        "time": "22:00",
+        "event": "before Check"
+      },
+      {
+        "time": "22:05",
+        "event": "of Check"
+      },
+      {
+        "time": "08:30+1",
+        "event": "before D2"
+      }
+    ]
+  },
+  "Tuesday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "08:30",
+        "event": "before D2"
+      },
+      {
+        "time": "09:20",
+        "event": "of D2"
+      },
+      {
+        "time": "09:25",
+        "event": "of Transition (D2 to E2)"
+      },
+      {
+        "time": "10:15",
+        "event": "of E2"
+      },
+      {
+        "time": "10:20",
+        "event": "of Transition (E2 to A2L)"
+      },
+      {
+        "time": "11:50",
+        "event": "of A2 and A2 Lab"
+      },
+      {
+        "time": "12:40",
+        "event": "of Lunch"
+      },
+      {
+        "time": "14:10",
+        "event": "of G2 Lab and G2"
+      },
+      {
+        "time": "14:15",
+        "event": "of Transition (G2L to F2)"
+      },
+      {
+        "time": "15:05",
+        "event": "of F2"
+      },
+      {
+        "time": "16:00",
+        "event": "of Flexible Use Time"
+      },
+      {
+        "time": "18:15",
+        "event": "before H2"
+      },
+      {
+        "time": "19:55",
+        "event": "of H2"
+      },
+      {
+        "time": "20:05",
+        "event": "of Transition (H2 to I2)"
+      },
+      {
+        "time": "21:45",
+        "event": "of I2"
+      },
+      {
+        "time": "22:00",
+        "event": "before Check"
+      },
+      {
+        "time": "22:05",
+        "event": "of Check"
+      },
+      {
+        "time": "08:30+1",
+        "event": "before B3"
+      }
+    ]
+  },
+  "Wednesday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "08:30",
+        "event": "before B3"
+      },
+      {
+        "time": "09:20",
+        "event": "of B3"
+      },
+      {
+        "time": "09:25",
+        "event": "of Transition (B3 to D3)"
+      },
+      {
+        "time": "10:15",
+        "event": "of D3"
+      },
+      {
+        "time": "10:20",
+        "event": "of Transition (D3 to C3L)"
+      },
+      {
+        "time": "11:50",
+        "event": "of C3 and C3 Lab"
+      },
+      {
+        "time": "12:40",
+        "event": "of Lunch"
+      },
+      {
+        "time": "14:10",
+        "event": "of E3 Lab and E3"
+      },
+      {
+        "time": "14:15",
+        "event": "of Transition (E3L to F3)"
+      },
+      {
+        "time": "15:05",
+        "event": "of F3"
+      },
+      {
+        "time": "15:10",
+        "event": "of Transition (F3 to G3)"
+      },
+      {
+        "time": "16:00",
+        "event": "of G3"
+      },
+      {
+        "time": "18:15",
+        "event": "before H3"
+      },
+      {
+        "time": "19:55",
+        "event": "of H3"
+      },
+      {
+        "time": "20:05",
+        "event": "of Transition (H3 to I3)"
+      },
+      {
+        "time": "21:45",
+        "event": "of I3"
+      },
+      {
+        "time": "22:00",
+        "event": "before Check"
+      },
+      {
+        "time": "22:05",
+        "event": "of Check"
+      },
+      {
+        "time": "08:30+1",
+        "event": "before C4"
+      }
+    ]
+  },
+  "Thursday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "08:30",
+        "event": "before C4"
+      },
+      {
+        "time": "09:20",
+        "event": "of C4"
+      },
+      {
+        "time": "09:25",
+        "event": "of Transition (C4 to A4)"
+      },
+      {
+        "time": "10:15",
+        "event": "of A4"
+      },
+      {
+        "time": "10:20",
+        "event": "of Transition (A4 to B4L)"
+      },
+      {
+        "time": "11:50",
+        "event": "of B4 and B4 Lab"
+      },
+      {
+        "time": "12:40",
+        "event": "of Lunch"
+      },
+      {
+        "time": "14:10",
+        "event": "of F4 Lab and F4"
+      },
+      {
+        "time": "14:15",
+        "event": "of Transition (F4L to G4)"
+      },
+      {
+        "time": "15:05",
+        "event": "of G4"
+      },
+      {
+        "time": "16:00",
+        "event": "of Flexible Use Time"
+      },
+      {
+        "time": "18:15",
+        "event": "before H4"
+      },
+      {
+        "time": "19:55",
+        "event": "of H4"
+      },
+      {
+        "time": "20:05",
+        "event": "of Transition (H4 to I4)"
+      },
+      {
+        "time": "21:45",
+        "event": "of I4"
+      },
+      {
+        "time": "22:00",
+        "event": "before Check"
+      },
+      {
+        "time": "22:05",
+        "event": "of Check"
+      },
+      {
+        "time": "08:30+1",
+        "event": "before A5"
+      }
+    ]
+  },
+  "Friday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "08:30",
+        "event": "before A5"
+      },
+      {
+        "time": "09:20",
+        "event": "of A5"
+      },
+      {
+        "time": "09:25",
+        "event": "of Transition (A5 to C5)"
+      },
+      {
+        "time": "10:15",
+        "event": "of C5"
+      },
+      {
+        "time": "10:20",
+        "event": "of Transition (C5 to D5L)"
+      },
+      {
+        "time": "11:50",
+        "event": "of D5 and D5 Lab"
+      },
+      {
+        "time": "12:40",
+        "event": "of Lunch"
+      },
+      {
+        "time": "13:30",
+        "event": "of B5"
+      },
+      {
+        "time": "13:35",
+        "event": "of Transition (B5 to E5L)"
+      },
+      {
+        "time": "15:05",
+        "event": "of E5 and E5 Lab"
+      },
+      {
+        "time": "16:00",
+        "event": "of Flexible Use Time"
+      },
+      {
+        "time": "23:00",
+        "event": "before Check"
+      },
+      {
+        "time": "23:05",
+        "event": "of Check"
+      },
+      {
+        "time": "23:00+1",
+        "event": "before Check"
+      }
+    ]
+  },
+  "Saturday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "23:00",
+        "event": "before Check"
+      },
+      {
+        "time": "23:05",
+        "event": "of Check"
+      },
+      {
+        "time": "22:00+1",
+        "event": "before Check"
+      }
+    ]
+  },
+  "Sunday": {
+    "bannerText": null,
+    "events": [
+      {
+        "time": "22:00",
+        "event": "before Check"
+      },
+      {
+        "time": "22:05",
+        "event": "of Check"
+      },
+      {
+        "time": "08:30+1",
+        "event": "before A1"
+      }
+    ]
+  }
+}
