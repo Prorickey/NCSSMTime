@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "scheduleType": "modified",
+    "scheduleType": "normal",
     "weekOf": null,
     "lastUpdated": "2025-10-19",
     "showTimeline": true,
@@ -9,7 +9,7 @@
     "specialSubTimer": false
   },
   "Monday": {
-    "bannerText": null,
+    "bannerText": "Modified Schedule - Wednesday Schedule",
     "events": [
       {
         "time": "08:30",
@@ -167,7 +167,7 @@
     ]
   },
   "Wednesday": {
-    "bannerText": null,
+    "bannerText": "PSAT - Modified Monday Schedule",
     "events": [
       {
         "time": "12:55",
