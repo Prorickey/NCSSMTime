@@ -358,8 +358,6 @@ function updateSchedule() {
         document.getElementById("txt2").innerHTML = `<span class="sub-text"></span>`;
     }
 
-    console.log(nextEvent.name)
-
     document.getElementById("txt").innerHTML = `${timeString}<br><span class="sub-text">Left ${nextEvent.name}</span>`; // countdown text that replaces "Loading..."
     
     if (pageTitle !== timeString) { // tab timer
